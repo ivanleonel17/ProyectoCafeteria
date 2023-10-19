@@ -5,10 +5,10 @@ app.use(express.static('public'))
 app.set('view engine','ejs')
 
 app.get('/',(req,res)=>{
-    res.send('hola mundo')
+    res.render('home')
 
 })
 
-app.listen(4500,()=>{
+app.listen(3500,()=>{
     console.log('el servidor se esta ejecutando')
 })
